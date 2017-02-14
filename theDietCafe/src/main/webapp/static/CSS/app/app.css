@@ -1,0 +1,59 @@
+body {
+     background-image: url("../../img/bacgImg.jpg") ;
+     background-repeat:no-repeat;
+     background-size: cover;
+     background-position:center;
+     height: 100%;
+     width: 100%;
+}
+.headerWidth{
+	width: 100% !important;
+    height: 100% !important;
+    
+    line-height: 1.428571429;
+}
+.navbar-brand{
+	color:#ffffff;
+    text-decoration: none;
+     font-size: 20px;
+    font-family: monospace;
+}
+ 
+ 
+ .nav>li>a {
+    color:#ffffff;
+    text-decoration: none;
+     font-size: 20px;
+    font-family: monospace;
+    
+}
+.navbar-brandli>a{
+	color:#ffffff;
+    text-decoration: none;
+     font-size: 20px;
+    font-family: monospace;
+}
+
+.container{
+	background-color: #008000;
+	max-width: none !important;
+	padding: 0;
+	
+}
+
+.top-navbar {
+	float: left;
+	width: 100%;
+}
+
+.left-nav {
+	float: none!important;
+	width: 150px;
+	vertical-align:top;
+}
+
+
+.navbar-nav > li > a:hover,.navbar-nav > li:focus {
+    background-color:#006f37!important;
+    
+}
