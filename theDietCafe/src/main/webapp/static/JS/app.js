@@ -1,6 +1,6 @@
 'use strict';
 
-var mainApp=angular.module('mainApp',['ui.router']);
+var mainApp=angular.module('mainApp',['ui.router','ui.grid']);
 
 
 mainApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
@@ -25,6 +25,32 @@ $urlRouterProvider.otherwise('/home');
            ,controller:'AboutUsCtrl'
             
         })
+        
+        
+        
+         .state('loginPage', {
+        url: '/loginPage',
+        templateUrl: 'static/pages/login.html'
+        	,controller:'LoginCtrl'
+        
+    })
+    
+     .state('signUp', {
+        url: '/signUp',
+        templateUrl: 'static/pages/signUp.html'
+        	,controller:'SignUpCtrl'
+        
+    })
+    
+    
+    
+    
+     .state('product', {
+        url: '/product',
+        templateUrl: 'static/pages/productDetails.html'
+        	,controller:'ProductDetailsCtrl'
+        
+    }) 
     
     /* .state('plans', {
         url: '/plans',
@@ -55,19 +81,7 @@ $urlRouterProvider.otherwise('/home');
         
     })
     
-    .state('loginPage', {
-        url: '/loginPage',
-        templateUrl: 'static/pages/loginPage.html'
-        	,controller:'LoginCtrl'
-        
-    })
-    
-     .state('signUp', {
-        url: '/signUp',
-        templateUrl: 'static/pages/signUp.html'
-        	,controller:'SignUpCtrl'
-        
-    })
+   
     
     
      .state('logout', {

@@ -137,14 +137,16 @@
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="static/CSS/app/app.css" rel="stylesheet"></link>
-<link href="static/CSS/lib/bootstrap-min.css" rel="stylesheet"></link>
+  <link href="static/CSS/lib/bootstrap-min.css" rel="stylesheet"></link>
+    <link href="static/CSS/lib/ui-grid.css" rel="stylesheet"></link>
         
     </head>
 <body>
 
 <div >
-	<div class="container headerWidth">
-		<div class="top-navbar header b-b">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container headerWidth container-fluid">
+		<div class="top-navbar header b-b  navbar-header">
 			<a href="#home" class="navbar-brand"> TheDietCafe.com </a>
 			<button class=" navbar navbar-toggle" data-toggle="collapse"
 				data-target=".navheadercollapse">
@@ -176,8 +178,8 @@
 			</div>
 		</div>
 		</div>
-
-    <div ui-view style="margin-top:50%">
+</nav>
+    <div ui-view style="margin-top:5%">
     </div>
 
 
@@ -185,10 +187,16 @@
  <script src="static/JS/lib/angular-min.js" ></script> 
 <script src="static/JS/lib/jquery.min.js" ></script> 
 <script src="static/JS/lib/angular-ui-router.js" ></script> 
+<script src="static/JS/lib/ui-grid.js"></script>
 <script src="static/JS/lib/bootstrap.min.js" ></script> 
 <script src="static/JS/app.js"></script> 	
 <script src="static/JS/app/controller/aboutUs_controller.js" /></script>
 <script src="static/JS/app/controller/home-controller.js" /></script>
+<script src="static/JS/app/controller/login-controller.js" /></script>
+<script src="static/JS/app/controller/singUp-controller.js" /></script>
+<script src="static/JS/app/controller/productDetails-controller.js"></script>
+<script src="static/JS/app/service/getUserLocation-service.js" /></script>
+
 
      
 
