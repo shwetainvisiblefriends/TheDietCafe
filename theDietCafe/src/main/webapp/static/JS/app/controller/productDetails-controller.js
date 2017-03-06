@@ -1,4 +1,4 @@
-mainApp.controller('ProductDetailsCtrl',['$scope','$filter',function($scope,$filter) {
+mainApp.controller('ProductDetailsCtrl',['$scope','$filter','$uibModal',function($scope,$filter,$uibModal) {
 	console.log('ProductDetailsCtrl is called');
 	/*$scope.gridOptions = {enableSorting: true,
 	        columnDefs: [
@@ -226,6 +226,18 @@ mainApp.controller('ProductDetailsCtrl',['$scope','$filter',function($scope,$fil
 	    	}
 	    	console.log(chooseItem);
 	    }
+	    
+	    
+	    
+	    /*Below code is written for Dialog box*/
+	    
+	    $scope.open = function () {
+	    	
+	    	var modalInstance = $uibModal.open({
+	    	templateUrl: 'static/pages/adderNPayment.html',
+	    	controller:'AddresNPaymntCtrl'
+	    	});
+	    	}
 	    
 	    
 }]);

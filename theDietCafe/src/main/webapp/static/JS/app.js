@@ -1,6 +1,6 @@
 'use strict';
 
-var mainApp=angular.module('mainApp',['ui.router','ui.grid']);
+var mainApp=angular.module('mainApp',['ui.router','ui.grid','ui.bootstrap']);
 
 
 mainApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
